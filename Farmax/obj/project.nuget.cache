@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yi1pWloO+CGobSfAmbGXeCOqzP96q2plEAMfgZFEFkvhBM2yMo31nQtbltYRMeRUmlFyjImsfRtFS7ZfmTBo2Q==",
+  "dgSpecHash": "wh6lIU9a0Y0GScclMCstoDdX79bII3QZjxVEitLSWpldordEi5b6vdcWCVEwRGaVX63qwrfhQby7Lg9l5g/Zxg==",
   "success": true,
-  "projectFilePath": "C:\\Jullia\\2- Faculdade\\C#\\Farmax\\Farmax\\Farmax.csproj",
+  "projectFilePath": "C:\\Jullia\\2- Github\\Web\\Farmax2.0\\Farmax\\Farmax.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Imendes_031\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Imendes_031\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

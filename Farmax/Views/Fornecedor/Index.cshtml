@@ -1,10 +1,9 @@
-﻿@model IEnumerable<Farmax.Models.Usuario>
+﻿@model IEnumerable<Farmax.Models.Fornecedor>
 @{
-    ViewData["Title"] = "Listagem de Usuários";
+    ViewData["Title"] = "Listagem de Fornecedores";
 }
-
 <br />
-<h1>Usuários</h1>
+<h1>Fornecedores</h1>
 <br />
 <p align="right">
     <a class="btn btn-outline-dark" asp-action="Create">+</a>
@@ -16,10 +15,13 @@
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th scope="col">
-                @Html.DisplayNameFor(model => model.Login)
+                @Html.DisplayNameFor(model => model.Fantasia)
             </th>
             <th scope="col">
-                @Html.DisplayNameFor(model => model.Nivel)
+                @Html.DisplayNameFor(model => model.Cnpj)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Telefone)
             </th>
             <th scope="col">
 
@@ -34,10 +36,13 @@
                     @item.Nome
                 </td>
                 <td>
-                    @item.Login
+                    @item.Fantasia
                 </td>
                 <td>
-                    @item.Nivel
+                    @item.Cnpj
+                </td>
+                <td>
+                    @item.Telefone
                 </td>
 
                 <td>
@@ -56,7 +61,7 @@
     </tbody>
 </table>
 
-<div class="modal fade" id="modal_usuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="modal_fornecedor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -71,20 +76,20 @@
         $(function () {
             $(".details").click(function () {
                 var id = $(this).attr("data-id");
-                $("#modal").load("/Usuario/Details/" + id, function () {
-                    $("#modal_usuario").modal("show");
+                $("#modal").load("/Fornecedor/Details/" + id, function () {
+                    $("#modal_fornecedor").modal("show");
                 })
             });
             $(".delete").click(function () {
                 var id = $(this).attr("data-id");
-                $("#modal").load("/Usuario/Delete/" + id, function () {
-                    $("#modal_usuario").modal("show");
+                $("#modal").load("/Fornecedor/Delete/" + id, function () {
+                    $("#modal_fornecedor").modal("show");
                 })
             });
             $(".edit").click(function () {
                 var id = $(this).attr("data-id");
-                $("#modal").load("/Usuario/Edit/" + id, function () {
-                    $("#modal_usuario").modal("show");
+                $("#modal").load("/Fornecedor/Edit/" + id, function () {
+                    $("#modal_fornecedor").modal("show");
                 })
             });
         })

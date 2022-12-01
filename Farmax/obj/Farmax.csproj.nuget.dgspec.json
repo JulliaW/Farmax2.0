@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Jullia\\2- Faculdade\\C#\\Farmax\\Farmax\\Farmax.csproj": {}
+    "C:\\Jullia\\2- Github\\Web\\Farmax2.0\\Farmax\\Farmax.csproj": {}
   },
   "projects": {
-    "C:\\Jullia\\2- Faculdade\\C#\\Farmax\\Farmax\\Farmax.csproj": {
+    "C:\\Jullia\\2- Github\\Web\\Farmax2.0\\Farmax\\Farmax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Jullia\\2- Faculdade\\C#\\Farmax\\Farmax\\Farmax.csproj",
+        "projectUniqueName": "C:\\Jullia\\2- Github\\Web\\Farmax2.0\\Farmax\\Farmax.csproj",
         "projectName": "Farmax",
-        "projectPath": "C:\\Jullia\\2- Faculdade\\C#\\Farmax\\Farmax\\Farmax.csproj",
+        "projectPath": "C:\\Jullia\\2- Github\\Web\\Farmax2.0\\Farmax\\Farmax.csproj",
         "packagesPath": "C:\\Users\\Imendes_031\\.nuget\\packages\\",
-        "outputPath": "C:\\Jullia\\2- Faculdade\\C#\\Farmax\\Farmax\\obj\\",
+        "outputPath": "C:\\Jullia\\2- Github\\Web\\Farmax2.0\\Farmax\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Imendes_031\\AppData\\Roaming\\NuGet\\NuGet.Config",

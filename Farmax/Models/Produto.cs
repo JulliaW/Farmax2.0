@@ -8,7 +8,7 @@ namespace Farmax.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Por favor, informe a descrição")]
-        public string Descrição { get; set; }
+        public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Por favor, informe a quantidade")]
         public string Quantidade { get; set; }
