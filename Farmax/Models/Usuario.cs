@@ -14,6 +14,7 @@ namespace Farmax.Models
         public string Login { get; set; }
 
         [Required(ErrorMessage = "Por favor, informe a Senha")]
+        [DataType(DataType.Password)]
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "Por favor, informe o Nível de acesso")]
