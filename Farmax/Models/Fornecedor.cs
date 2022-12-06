@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Farmax.Models
 {
+    [Table("Forecedor")]
     public class Fornecedor
     {
         [Key]

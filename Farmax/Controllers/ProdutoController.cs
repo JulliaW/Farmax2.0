@@ -16,7 +16,7 @@ namespace Farmax.Controllers
 
         public IActionResult Index()
         {
-            var allProdutos = _appCont.produtos.ToList();
+            var allProdutos = _appCont.Produtos.ToList();
             return View(allProdutos);
         }
 
@@ -25,7 +25,7 @@ namespace Farmax.Controllers
             if (id == null)
                 return NotFound();
 
-            var produto = await _appCont.produtos.FirstOrDefaultAsync(m => m.Id == id);
+            var produto = await _appCont.Produtos.FirstOrDefaultAsync(m => m.Id == id);
 
             if (produto == null)
                 return NotFound();
@@ -57,7 +57,7 @@ namespace Farmax.Controllers
             if (id == null)
                 return NotFound();
 
-            var produto = await _appCont.produtos.FindAsync(id);
+            var produto = await _appCont.Produtos.FindAsync(id);
 
             if (produto == null)
                 return NotFound();
@@ -96,7 +96,7 @@ namespace Farmax.Controllers
             if (id == null)
                 return NotFound();
 
-            var produto = await _appCont.produtos.FirstOrDefaultAsync(m => m.Id == id);
+            var produto = await _appCont.Produtos.FirstOrDefaultAsync(m => m.Id == id);
 
             if (produto == null)
                 return NotFound();
@@ -108,15 +108,15 @@ namespace Farmax.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var produto = await _appCont.produtos.FindAsync(id);
-            _appCont.produtos.Remove(produto);
+            var produto = await _appCont.Produtos.FindAsync(id);
+            _appCont.Produtos.Remove(produto);
             await _appCont.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ProdutoExists(int id)
         {
-            return _appCont.produtos.Any(e => e.Id == id);
+            return _appCont.Produtos.Any(e => e.Id == id);
         }
     }
 }
